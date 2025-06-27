@@ -1,34 +1,37 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import doctorimg  from '../assets/PNG/doctorimg.png'
+import ecartimg   from '../assets/PNG/ecartimg.png'
+import soldierimg from '../assets/PNG/soldierimg.png'
 
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Multi-SpecialityHospital",
+    description: "This is the homepage of a multi-speciality hospital in Bengaluru showcasing its advanced healthcare services and experienced doctors",
+    image: doctorimg,
+    tags: ["React", "TailwindCSS", "Typescript"],
+    demoUrl: "https://ty-hospital.vercel.app/",
+    githubUrl: "https://github.com/yadavittal?tab=repositories",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "PatriotPost – Honoring Our Heroes",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "This is the homepage of PatriotPost, a patriotic platform featuring a soldier reading a letter under the Indian flag. The navbar includes links like,Upload Letters",
+    image: soldierimg ,
+    tags: ["TypeScript", "React", "Next.js"],
+    demoUrl: "https://patriot-post-project.vercel.app/",
+    githubUrl: "https://github.com/yadavittal?tab=repositories",
   },
   {
     id: 3,
     title: "E-commerce Platform",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      'This is a cosmetics e-commerce web page titled "Quick Shopping" showcasing beauty products with details like price, stock status, rating, and warranty. ',
+    image: ecartimg,
+    tags: ["React", "Node.js", "Redux"],
+    demoUrl: "https://quick-shopping-app.vercel.app/",
+    githubUrl: "https://github.com/yadavittal?tab=repositories",
   },
 ];
 
@@ -69,8 +72,8 @@ export const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <h3 className="text-xl text-start font-semibold mb-1"> {project.title}</h3>
+                <p className="text-muted-foreground text-start text-sm mb-4">
                   {project.description}
                 </p>
                 <div className="flex justify-between items-center">
@@ -100,7 +103,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/yadavittal"
           >
             Check My Github <ArrowRight size={16} />
           </a>
